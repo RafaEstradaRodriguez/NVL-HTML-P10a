@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form method="post" action="miservidor.php">
+        <div>
+            <label for="codigopostal">Código postal</label><br>
+            <input id="codigopostal" type="text">   
+        </div>
+        <div>
+            <label for="satisfaccion">Nivel de satisfacción</label><br>
+            <select name="satisfacccion" id="satisfaccion">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="puntospositivos">Puntos positivos del producto</label><br>
+            <textarea name="puntospositivos" id="puntos positivos" cols="100" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="puntosnegativos">Puntos negativos del producto</label><br>
+            <textarea name="puntosnegativos" id="puntosnegativos" cols="100" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="valoracion">Valoración del producto</label><br>
+            <select name="valoracion" id="valoracion">
+                <option value="Excelente">Excelente</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Regular">Regular</option>
+                <option value="Pésimo">Pésimo</option>
+            </select>
+            <input type="radio" name="valoracion" id="valoracion">Excelente
+            <input type="radio" name="valoracion" id="valoracion">Bueno
+            <input type="radio" name="valoracion" id="valoracion">Regular
+            <input type="radio" name="valoracion" id="valoracion">Pésimo
+        </div>
+    </form>
+    
+</body>
+</html>
